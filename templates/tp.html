@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Headphones Product Page</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #333;
+  --secondary-color: #444;
+  --ternary-color: #555;
+  --light-color: #ccc;
+  --light-secondary-color: #ddd;
+  --light-ternary-color: #eee;
+  --overlay-color: rgba(0, 0, 0, 0.7);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Catamaran", sans-serif;
+  line-height: 1.6;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.3;
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+.navbar {
+  font-size: 1.2rem;
+  padding: 0.3rem 0;
+}
+
+.navbar .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.navbar ul {
+  display: flex;
+  justify-self: flex-end;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar a {
+  padding: 0 1rem;
+}
+
+.navbar a:hover {
+  color: var(--ternary-color);
+}
+
+.section-showcase {
+  margin: 2rem 0;
+}
+
+.section-showcase .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-showcase h1 {
+  font-size: 4rem;
+  color: var(--primary-color);
+}
+
+.section-showcase p {
+  margin: 1rem 0;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border-radius: 30px;
+}
+
+.btn:hover {
+  background: var(--secondary-color);
+}
+
+.section-large-text {
+  position: relative;
+  background: url("https://i.ibb.co/1RS1dqC/section-b.jpg") bottom center/cover
+    no-repeat;
+  height: 600px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--overlay-color);
+}
+
+.section-large-text-inner {
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  max-width: 860px;
+  padding: 5rem 0;
+}
+
+.section-large-text-inner h2 {
+  font-size: 5rem;
+  margin-top: 1rem;
+}
+
+.section-large-text-inner h3 {
+  font-size: 2rem;
+}
+
+.section-large-text-inner p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.section-gallery .gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.section-gallery .gallery img:first-child {
+  grid-row: 1/3;
+  grid-column: 1/3;
+}
+
+.section-gallery .gallery img:nth-child(2) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.section-gallery .gallery img {
+  width: 100%;
+  height: 100%;
+}
+ .connect{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: grey;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  padding-bottom: 15px;
+}
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="logo">Phono</h1>
+        <ul class="nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section id="home" class="section-showcase">
+      <div class="container">
+        <div>
+          <h1>The headphones of the future.</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+            repudiandae rerum libero ipsum asperiores omnis mollitia, nostrum
+            commodi placeat ea itaque modi corrupti corporis nam voluptas aut
+            reprehenderit eaque culpa.
+          </p>
+          <a href="#about" class="btn">Read More</a>
+        </div>
+        <img src="https://i.ibb.co/37Y74kv/showcase.jpg" alt="" />
+      </div>
+    </section>
+    <section id="about" class="section-large-text">
+      <div class="overlay">
+        <div class="section-large-text-inner">
+          <h3>Loud & Clear</h3>
+          <h2>People Aren't Hearing All the Music</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+            repudiandae laboriosam quia, error tempore porro ducimus voluptate
+            laborum nostrum iure.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section-gallery">
+      <div class="gallery">
+        <img src="https://i.ibb.co/CHLBZnp/gal2323.jpg" alt="" class="big" />
+        <img src="https://i.ibb.co/4pBbhfY/gal39834.jpg" alt="" class="big" />
+        <img src="https://i.ibb.co/xSnHP7g/gal43884.jpg" alt="" class="big" />
+        <img src="https://i.ibb.co/QN6Bnrb/gal4958.jpg" alt="" class="big" />
+        <img src="https://i.ibb.co/dGZvj75/gal4545.jpg" alt="" class="big" />
+        <img src="https://i.ibb.co/S6FVFNt/gal74744.jpg" alt="" class="big" />
+      </div>
+    </section>
+  <div class="connect" style="font-family: cursive;">
+  <p style="color:white;">With such a remarkable experience of more then 1000 happy customers we are glad to serve our community.</p>
+    <p><i class="fa fa-phone generalconnect" aria-hidden="true" style=" padding-top: 10px;"></i> Let's Talk : +91 1234567890</p>
+    <p><i class="fa fa-envelope generalconnect" aria-hidden="true"></i> General Support : abc@gmail.com</p>
+</div>
+  </body>
+</html>

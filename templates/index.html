@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
+  <meta name="author" content="GeeksLabs">
+  <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
+  <link rel="shortcut icon" href="../static/img/favicon.png">
+
+  <title>Login Page - MyAxisBank Online </title>
+
+  <!-- Bootstrap CSS -->
+  <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+  <!-- bootstrap theme -->
+  <link href="../static/css/bootstrap-theme.css" rel="stylesheet">
+  <!--external css-->
+  <!-- font icon -->
+  <link href="../static/css/elegant-icons-style.css" rel="stylesheet" />
+  <link href="../static/css/font-awesome.css" rel="stylesheet" />
+  <!-- Custom styles -->
+  <link href="../static/css/style.css" rel="stylesheet">
+  <link href="../static/css/style-responsive.css" rel="stylesheet" />
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
+  <!--[if lt IE 9]>
+    <script src="../static/js/html5shiv.js"></script>
+    <script src="../static/js/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      .log{
+        display:flex;
+        margin: 100px auto 0;
+      }
+      #hh{
+        color: darkslateblue;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+    </style>
+
+</head>
+
+<body>
+  <div class="log">
+    <div class="login-img3-body" style="height: 50%px; width:70%;">
+    </div>
+  
+    <div class="container">
+      
+      <form class="login-form" action="/loginUser" method="post">
+        
+        <div class="login-wrap">
+          <h4 id="hh"><strong>Welcome to the Indian Bank!</strong></h4>
+          <h4 id="hh"><strong>Please enter your credentials.</strong></h4>
+          <p class="login-img"><i class="icon_lock_alt"></i></p>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="icon_profile"></i></span>
+            <input type="text" class="form-control" name="uemail" placeholder="Emailid" autofocus>
+          </div>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="icon_key_alt"></i></span>
+            <input type="password" class="form-control" name="upass" placeholder="Password">
+          </div>
+  
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
+          <h4 id="hh"><strong>If you are new, register here :)</strong></h4>
+          <a href="{{ url_for('signup') }}" class="btn btn-info btn-lg btn-block">Signup</a>
+        </div>
+      </form>
+      
+    </div>
+  
+  </div>
+
+</body>
+
+</html>
